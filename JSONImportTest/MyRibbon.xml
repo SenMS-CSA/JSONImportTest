@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+		<tab idMso="TabAddIns">
+			<group id="ContentGroup" label="Content">
+				<button id="textButton" label="Insert Text"
+					 screentip="Text" onAction="OnTextButton"
+					 supertip="Inserts text at the cursor location."/>
+				<button id="tableButton" label="Insert Table"
+					 screentip="Table" onAction="OnTableButton"
+					 supertip="Inserts a table at the cursor location."/>
+			</group>
+			<group id="ImportGroup" label="Import">
+				<button id="jsonImportButton" label="Import from JSON..."
+					 screentip="Import JSON" onAction="OnJsonImportButton"
+					 supertip="Import Visio diagram from JSON file"/>
+			</group>
+		</tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

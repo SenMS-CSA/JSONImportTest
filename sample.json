@@ -1,0 +1,116 @@
+{
+  "name": "Sample Organizational Chart",
+  "template": "",
+  "shapes": [
+    {
+      "id": "shape1",
+      "name": "CEO",
+      "text": "Chief Executive Officer\nJohn Smith",
+      "x": 5.0,
+      "y": 8.0,
+      "width": 2.0,
+      "height": 1.0,
+      "stencil": "Basic Shapes",
+      "master": "Rectangle",
+      "properties": {
+        "Department": "Executive",
+        "Level": "C-Level",
+        "Email": "john.smith@company.com"
+      }
+    },
+    {
+      "id": "shape2",
+      "name": "CTO",
+      "text": "Chief Technology Officer\nSarah Johnson",
+      "x": 2.0,
+      "y": 6.0,
+      "width": 2.0,
+      "height": 1.0,
+      "stencil": "Basic Shapes",
+      "master": "Rectangle",
+      "properties": {
+        "Department": "Technology",
+        "Level": "C-Level",
+        "Email": "sarah.johnson@company.com"
+      }
+    },
+    {
+      "id": "shape3",
+      "name": "CFO",
+      "text": "Chief Financial Officer\nMike Wilson",
+      "x": 8.0,
+      "y": 6.0,
+      "width": 2.0,
+      "height": 1.0,
+      "stencil": "Basic Shapes",
+      "master": "Rectangle",
+      "properties": {
+        "Department": "Finance",
+        "Level": "C-Level",
+        "Email": "mike.wilson@company.com"
+      }
+    },
+    {
+      "id": "shape4",
+      "name": "DEV_MANAGER",
+      "text": "Development Manager\nAlice Brown",
+      "x": 1.0,
+      "y": 4.0,
+      "width": 1.8,
+      "height": 0.8,
+      "stencil": "Basic Shapes",
+      "master": "Rectangle",
+      "properties": {
+        "Department": "Technology",
+        "Level": "Manager",
+        "Team": "Development"
+      }
+    },
+    {
+      "id": "shape5",
+      "name": "QA_MANAGER",
+      "text": "QA Manager\nBob Davis",
+      "x": 3.2,
+      "y": 4.0,
+      "width": 1.8,
+      "height": 0.8,
+      "stencil": "Basic Shapes",
+      "master": "Rectangle",
+      "properties": {
+        "Department": "Technology",
+        "Level": "Manager",
+        "Team": "Quality Assurance"
+      }
+    }
+  ],
+  "connectors": [
+    {
+      "id": "connector1",
+      "fromShape": "shape1",
+      "toShape": "shape2",
+      "text": "Reports to",
+      "connectorType": "Dynamic connector"
+    },
+    {
+      "id": "connector2",
+      "fromShape": "shape1",
+      "toShape": "shape3",
+      "text": "Reports to",
+      "connectorType": "Dynamic connector"
+    },
+    {
+      "id": "connector3",
+      "fromShape": "shape2",
+      "toShape": "shape4",
+      "text": "Manages",
+      "connectorType": "Dynamic connector"
+    },
+    {
+      "id": "connector4",
+      "fromShape": "shape2",
+      "toShape": "shape5",
+      "text": "Manages",
+      "connectorType": "Dynamic connector"
+    }
+  ]
+}
